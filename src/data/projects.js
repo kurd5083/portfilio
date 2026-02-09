@@ -1,7 +1,14 @@
+import aipost from "/src/assets/aipost.jpg";
+import klassikgames from "/src/assets/klassikgames.jpg";
+import searchProducts from "/src/assets/search-products.jpg";
+import gamerelics from "/src/assets/gamerelics.jpg";
+import grambee from "/src/assets/grambee.jpg";
+import gamekool from "/src/assets/gamekool.jpg";
+
 export const projects = [
   {
     title: "AIPosting",
-    image: "/src/assets/aipost.jpg",
+    image: aipost,
     stack:
       "React, TypeScript, Zustand, TanStack Query, Styled Components, Swiper, TailwindCSS, REST API, Vite, CI/CD",
     description:
@@ -10,7 +17,7 @@ export const projects = [
   },
   {
     title: "KlassikGames",
-    image: "/src/assets/klassikgames.jpg",
+    image: klassikgames,
     stack:
       "React, JavaScript, HTML5, CSS3, TailwindCSS, Zustand, Styled Components, Swiper, REST API, Vite",
     description:
@@ -19,7 +26,7 @@ export const projects = [
   },
   {
     title: "RAWG Game Search",
-    image: "/src/assets/search-products.jpg",
+    image: searchProducts,
     stack:
       "React, JavaScript, HTML5, CSS3, SCSS, Redux Toolkit, TanStack Query, REST API, TailwindCSS, Vite",
     description:
@@ -28,7 +35,7 @@ export const projects = [
   },
   {
     title: "GameRelics",
-    image: "/src/assets/gamerelics.jpg",
+    image: gamerelics,
     stack:
       "React, JavaScript, HTML5, CSS3, TailwindCSS, Zustand, Styled Components, REST API, Vite, Framer Motion",
     description:
@@ -37,7 +44,7 @@ export const projects = [
   },
   {
     title: "GRAMBEE",
-    image: "/src/assets/grambee.jpg",
+    image: grambee,
     stack:
       "React, Next.js, TypeScript, TailwindCSS, NestJS, REST API, Vite, Zustand, TanStack Query, CI/CD",
     description:
@@ -46,7 +53,7 @@ export const projects = [
   },
   {
     title: "GameKool",
-    image: "/src/assets/gamekool.jpg",
+    image: gamekool,
     stack:
       "React, JavaScript, HTML5, CSS3, TailwindCSS, Zustand, Styled Components, REST API, Vite, Framer Motion, Swiper",
     description:
