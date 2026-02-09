@@ -4,6 +4,7 @@ import searchProducts from "/src/assets/search-products.jpg";
 import gamerelics from "/src/assets/gamerelics.jpg";
 import grambee from "/src/assets/grambee.jpg";
 import gamekool from "/src/assets/gamekool.jpg";
+import yandex from "/src/assets/yandex.jpg";
 
 export const projects = [
   {
@@ -59,5 +60,14 @@ export const projects = [
     description:
       "Интернет-магазин классических игр с адаптивным интерфейсом, фильтрацией по категориям и навигацией по коллекциям. Проект демонстрирует навыки работы с динамическими данными, интерактивным UI и современными анимациями.",
     link: "https://gamekool-de.netlify.app/",
+  },
+  {
+    title: "Yandex Drag & Drop Shop",
+    image: yandex,
+    stack:
+        "React, TypeScript, Zustand, Styled Components, Framer Motion, Vite, Drag & Drop, Cart, Checkout",
+    description:
+    "Тестовое для Яндекса: интернет-магазин с drag & drop товаров в корзину, подсчетом суммы и симуляцией оплаты. Демонстрирует навыки работы с интерактивным UI, управлением состояния и современной архитектурой фронтенда.",
+    link: "https://yandex-projects.netlify.app/",
   },
 ];
