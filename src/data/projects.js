@@ -1,4 +1,5 @@
 import aipost from "/src/assets/aipost.jpg";
+import channelstats from "/src/assets/channelstats.jpg";
 import klassikgames from "/src/assets/klassikgames.jpg";
 import searchProducts from "/src/assets/search-products.jpg";
 import gamerelics from "/src/assets/gamerelics.jpg";
@@ -11,10 +12,19 @@ export const projects = [
     title: "AIPosting",
     image: aipost,
     stack:
-      "React, TypeScript, Zustand, TanStack Query, Styled Components, Swiper, TailwindCSS, REST API, Vite, CI/CD",
+      "React, TypeScript, Zustand, TanStack Query, Styled Components, Swiper, REST API, Vite, CI/CD",
     description:
       "Платформа для автоматической генерации и публикации контента в соцсетях с помощью AI. Позволяет создавать посты, адаптированные под бренд и целевую аудиторию, планировать публикации и работать с многоформатным контентом.",
     link: "https://aiposting.live/",
+  },
+  {
+    title: "ChannelStats",
+    image: channelstats,
+    stack:
+      "React, TypeScript, Zustand, TanStack Query, Styled TailwindCSS, REST API, Vite, SheetJS (xlsx)",
+    description:
+    "Платформа для мониторинга и анализа статистики Telegram-каналов. Позволяет отслеживать подписки, отписки, чистый трафик и конверсию, строить графики активности по часам, фильтровать каналы и выгружать данные в Excel для удобного анализа.",
+    link: "https://channelstats.aiposting.live/",
   },
   {
     title: "KlassikGames",

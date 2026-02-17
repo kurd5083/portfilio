@@ -2,14 +2,12 @@ import styled from "styled-components";
 import { Section, Title, Card } from "../styles";
 import { motion } from "framer-motion";
 
-// Обертка всех блоков
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 `;
 
-// Блок категории
 const Group = styled(motion.div)`
   background: linear-gradient(145deg, rgba(97,218,251,0.05), rgba(167,139,250,0.05));
   border-radius: 18px;
@@ -25,7 +23,6 @@ const Group = styled(motion.div)`
   }
 `;
 
-// Название категории
 const Label = styled.h4`
   font-size: 15px;
   letter-spacing: 1px;
@@ -35,14 +32,12 @@ const Label = styled.h4`
   color: #61dafb;
 `;
 
-// Список тегов
 const Tags = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 `;
 
-// Отдельный тег
 const Tag = styled.span`
   background: #1c212b;
   padding: 7px 14px;
