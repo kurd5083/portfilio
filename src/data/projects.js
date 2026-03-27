@@ -4,6 +4,7 @@ import klassikgames from "/src/assets/klassikgames.jpg";
 import searchProducts from "/src/assets/search-products.jpg";
 import gamerelics from "/src/assets/gamerelics.jpg";
 import grambee from "/src/assets/grambee.jpg";
+import grambeeWeb from "/src/assets/grambee-web.jpg";
 import gamekool from "/src/assets/gamekool.jpg";
 import yandex from "/src/assets/yandex.jpg";
 
@@ -25,6 +26,13 @@ export const projects = [
     description:
     "Платформа для мониторинга и анализа статистики Telegram-каналов. Позволяет отслеживать подписки, отписки, чистый трафик и конверсию, строить графики активности по часам, фильтровать каналы и выгружать данные в Excel для удобного анализа.",
     link: "https://channelstats.aiposting.live/",
+  },
+  {
+    title: "GRAMBEE Web App",
+    image: grambeeWeb,
+    stack: "React, TypeScript, Next.js, Zustand, TanStack Query, Styled Components, Telegram Mini Apps API, REST API, Vite, CI/CD",
+    description: "Telegram Web App для управления Telegram-каналами и аналитики с интеграцией AI-помощника. Включает AI-редактор контента, контент-календарь, систему публикации постов, платёжную систему (TBank, USDT) и финансовую аналитику. Встроенный AI-чат отвечает на вопросы на основе базы знаний.",
+    link: 'https://t.me/GRAMBEEBOT',
   },
   {
     title: "KlassikGames",

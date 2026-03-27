@@ -75,9 +75,9 @@ const Block = ({ title, items, index }) => (
 export default function Stack() {
   const stackBlocks = [
     { title: "Frontend", items: ["React","Next.js","JS","TS","HTML5","CSS3","Адаптивная верстка","Vite","React Native"] },
-    { title: "State & Data", items: ["Redux Toolkit","Redux","Zustand","TanStack Query","REST API","Swagger"] },
-    { title: "Styling & UI", items: ["styled-components","SCSS","CSS Modules","TailwindCSS","Ant Design","Figma"] },
-    { title: "DevOps & Infrastructure", items: ["Git","GitHub","GitLab","CI/CD","Deploy","SSL"] },
+    { title: "State & Data", items: ["Redux Toolkit","Redux","Zustand","TanStack Query","REST API","Swagger", "Axios"] },
+    { title: "Styling & UI", items: ["styled-components","SCSS","CSS Modules","TailwindCSS","Ant Design","Figma", "BEM"] },
+    { title: "DevOps & Infrastructure", items: ["Git","GitHub","GitLab","CI/CD","Deploy","SSL", "Docker", "Vercel", "Netlify", "ESLint", "Prettier"] },
     { title: "CMS & Integration", items: ["WordPress","API Integration"] },
     { title: "Architecture & Principles", items: ["FSD","DRY","KISS","YAGNI"] },
   ];
