@@ -9,31 +9,31 @@ import gamekool from "/src/assets/gamekool.jpg";
 import yandex from "/src/assets/yandex.jpg";
 
 export const projects = [
-  {
-    title: "AIPosting",
-    image: aipost,
-    stack:
-      "React, TypeScript, Zustand, TanStack Query, Styled Components, Swiper, REST API, Vite, CI/CD",
-    description:
-      "Платформа для автоматической генерации и публикации контента в соцсетях с помощью AI. Позволяет создавать посты, адаптированные под бренд и целевую аудиторию, планировать публикации и работать с многоформатным контентом.",
-    link: "https://aiposting.live/",
-  },
-  {
-    title: "ChannelStats",
-    image: channelstats,
-    stack:
-      "React, TypeScript, Zustand, TanStack Query, Styled TailwindCSS, REST API, Vite, SheetJS (xlsx)",
-    description:
-    "Платформа для мониторинга и анализа статистики Telegram-каналов. Позволяет отслеживать подписки, отписки, чистый трафик и конверсию, строить графики активности по часам, фильтровать каналы и выгружать данные в Excel для удобного анализа.",
-    link: "https://channelstats.aiposting.live/",
-  },
-  {
-    title: "GRAMBEE Web App",
-    image: grambeeWeb,
-    stack: "React, TypeScript, Next.js, Zustand, TanStack Query, Styled Components, Telegram Mini Apps API, REST API, Vite, CI/CD",
-    description: "Telegram Web App для управления Telegram-каналами и аналитики с интеграцией AI-помощника. Включает AI-редактор контента, контент-календарь, систему публикации постов, платёжную систему (TBank, USDT) и финансовую аналитику. Встроенный AI-чат отвечает на вопросы на основе базы знаний.",
-    link: 'https://t.me/GRAMBEEBOT',
-  },
+  // {
+  //   title: "AIPosting",
+  //   image: aipost,
+  //   stack:
+  //     "React, TypeScript, Zustand, TanStack Query, Styled Components, Swiper, REST API, Vite, CI/CD",
+  //   description:
+  //     "Платформа для автоматической генерации и публикации контента в соцсетях с помощью AI. Позволяет создавать посты, адаптированные под бренд и целевую аудиторию, планировать публикации и работать с многоформатным контентом.",
+  //   link: "https://aiposting.live/",
+  // },
+  // {
+  //   title: "ChannelStats",
+  //   image: channelstats,
+  //   stack:
+  //     "React, TypeScript, Zustand, TanStack Query, Styled TailwindCSS, REST API, Vite, SheetJS (xlsx)",
+  //   description:
+  //   "Платформа для мониторинга и анализа статистики Telegram-каналов. Позволяет отслеживать подписки, отписки, чистый трафик и конверсию, строить графики активности по часам, фильтровать каналы и выгружать данные в Excel для удобного анализа.",
+  //   link: "https://channelstats.aiposting.live/",
+  // },
+  // {
+  //   title: "GRAMBEE Web App",
+  //   image: grambeeWeb,
+  //   stack: "React, TypeScript, Next.js, Zustand, TanStack Query, Styled Components, Telegram Mini Apps API, REST API, Vite, CI/CD",
+  //   description: "Telegram Web App для управления Telegram-каналами и аналитики с интеграцией AI-помощника. Включает AI-редактор контента, контент-календарь, систему публикации постов, платёжную систему (TBank, USDT) и финансовую аналитику. Встроенный AI-чат отвечает на вопросы на основе базы знаний.",
+  //   link: 'https://t.me/GRAMBEEBOT',
+  // },
   {
     title: "KlassikGames",
     image: klassikgames,
