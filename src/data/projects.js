@@ -53,7 +53,7 @@ export const projects = [
     link: "https://search-products-shop.netlify.app/",
   },
   {
-    title: "GameRelics",
+    title: "GameRelics", 
     image: gamerelics,
     stack:
       "React, JavaScript, HTML5, CSS3, TailwindCSS, Zustand, Styled Components, REST API, Vite, Framer Motion",
