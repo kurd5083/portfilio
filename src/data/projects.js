@@ -1,39 +1,31 @@
-import aipost from "/src/assets/aipost.jpg";
-import channelstats from "/src/assets/channelstats.jpg";
+import nda from "/src/assets/nda.jpg";
 import klassikgames from "/src/assets/klassikgames.jpg";
 import searchProducts from "/src/assets/search-products.jpg";
 import gamerelics from "/src/assets/gamerelics.jpg";
-import grambee from "/src/assets/grambee.jpg";
 import grambeeWeb from "/src/assets/grambee-web.jpg";
+import grambee from "/src/assets/grambee.jpg";
 import gamekool from "/src/assets/gamekool.jpg";
 import yandex from "/src/assets/yandex.jpg";
 
 export const projects = [
-  // {
-  //   title: "AIPosting",
-  //   image: aipost,
-  //   stack:
-  //     "React, TypeScript, Zustand, TanStack Query, Styled Components, Swiper, REST API, Vite, CI/CD",
-  //   description:
-  //     "Платформа для автоматической генерации и публикации контента в соцсетях с помощью AI. Позволяет создавать посты, адаптированные под бренд и целевую аудиторию, планировать публикации и работать с многоформатным контентом.",
-  //   link: "https://aiposting.live/",
-  // },
-  // {
-  //   title: "ChannelStats",
-  //   image: channelstats,
-  //   stack:
-  //     "React, TypeScript, Zustand, TanStack Query, Styled TailwindCSS, REST API, Vite, SheetJS (xlsx)",
-  //   description:
-  //   "Платформа для мониторинга и анализа статистики Telegram-каналов. Позволяет отслеживать подписки, отписки, чистый трафик и конверсию, строить графики активности по часам, фильтровать каналы и выгружать данные в Excel для удобного анализа.",
-  //   link: "https://channelstats.aiposting.live/",
-  // },
-  // {
-  //   title: "GRAMBEE Web App",
-  //   image: grambeeWeb,
-  //   stack: "React, TypeScript, Next.js, Zustand, TanStack Query, Styled Components, Telegram Mini Apps API, REST API, Vite, CI/CD",
-  //   description: "Telegram Web App для управления Telegram-каналами и аналитики с интеграцией AI-помощника. Включает AI-редактор контента, контент-календарь, систему публикации постов, платёжную систему (TBank, USDT) и финансовую аналитику. Встроенный AI-чат отвечает на вопросы на основе базы знаний.",
-  //   link: 'https://t.me/GRAMBEEBOT',
-  // },
+  {
+    title: "AI-платформа для постов в соцсетях",
+    image: nda,
+    stack: "React, TypeScript, Zustand, TanStack Query, Styled Components, Swiper, REST API, Vite, CI/CD",
+    description: "Платформа для автоматической генерации и публикации контента в соцсетях с помощью AI. Позволяет создавать посты, адаптированные под бренд и целевую аудиторию, планировать публикации и работать с мультиформатным контентом.",
+  },
+  {
+    title: "Дашборд аналитики Telegram-каналов",
+    image: nda,
+    stack: "React, TypeScript, Zustand, TanStack Query, TailwindCSS, REST API, Vite, SheetJS (xlsx)",
+    description: "Платформа для мониторинга и анализа статистики Telegram-каналов. Позволяет отслеживать подписки, отписки, чистый трафик и конверсию, строить графики активности по часам, фильтровать каналы и выгружать данные в Excel для удобного анализа.",
+  },
+  {
+    title: "Telegram Mini App для управления каналами",
+    image: nda,
+    stack: "React, TypeScript, Next.js, Zustand, TanStack Query, Styled Components, Telegram Mini Apps API, REST API, Vite, CI/CD",
+    description: "Telegram Web App для управления каналами и аналитики с интеграцией AI-помощника. Включает AI-редактор контента, контент-календарь, систему публикации постов, платёжную систему (с поддержкой нескольких провайдеров) и финансовую аналитику. Встроенный AI-чат отвечает на вопросы на основе базы знаний.",
+  },
   {
     title: "KlassikGames",
     image: klassikgames,
@@ -53,7 +45,7 @@ export const projects = [
     link: "https://search-products-shop.netlify.app/",
   },
   {
-    title: "GameRelics", 
+    title: "GameRelics",
     image: gamerelics,
     stack:
       "React, JavaScript, HTML5, CSS3, TailwindCSS, Zustand, Styled Components, REST API, Vite, Framer Motion",
@@ -63,12 +55,10 @@ export const projects = [
   },
   {
     title: "GRAMBEE",
-    image: grambee,
+    image: nda,
     stack:
       "React, Next.js, TypeScript, TailwindCSS, NestJS, REST API, Vite, Zustand, TanStack Query, CI/CD",
-    description:
-      "GRAMBEE — мощный инструмент для управления трафиком, который превращает сложные процессы в простой и эффективный. Помогает масштабировать бизнес, экономя время и ресурсы на рутинных задачах. Frontend на React/Next.js с интеграцией NestJS backend.",
-    link: "https://landing-nextjs.netlify.app/",
+    "description": "Мощный инструмент для управления трафиком, который превращает сложные процессы в простые и эффективные. Помогает масштабировать бизнес, экономя время и ресурсы на рутинных задачах. Frontend на React/Next.js с интеграцией NestJS backend.",
   },
   {
     title: "GameKool",
@@ -83,9 +73,9 @@ export const projects = [
     title: "Yandex Drag & Drop Shop",
     image: yandex,
     stack:
-        "React, TypeScript, Zustand, Styled Components, Framer Motion, Vite, Drag & Drop, Cart, Checkout",
+      "React, TypeScript, Zustand, Styled Components, Framer Motion, Vite, Drag & Drop, Cart, Checkout",
     description:
-    "Тестовое для Яндекса: интернет-магазин с drag & drop товаров в корзину, подсчетом суммы и симуляцией оплаты. Демонстрирует навыки работы с интерактивным UI, управлением состояния и современной архитектурой фронтенда.",
+      "Тестовое для Яндекса: интернет-магазин с drag & drop товаров в корзину, подсчетом суммы и симуляцией оплаты. Демонстрирует навыки работы с интерактивным UI, управлением состояния и современной архитектурой фронтенда.",
     link: "https://yandex-projects.netlify.app/",
   },
 ];

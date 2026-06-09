@@ -266,7 +266,7 @@ export default function ProjectCard({ project, index }) {
       
       <LinkWrapper>
         <Link href={project.link} target="_blank" rel="noopener noreferrer">
-          <span>⟫</span> DEPLOY <span>⟫</span>
+          <span>{project.link && <span>⟫ DEPLOY ⟫</span>}</span>
         </Link>
         <Metrics>
           <MetricItem>📁 {Math.floor(Math.random() * 50) + 10} files</MetricItem>
