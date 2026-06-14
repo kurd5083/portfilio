@@ -1,10 +1,7 @@
 import nda from "/src/assets/nda.jpg";
-import klassikgames from "/src/assets/klassikgames.jpg";
 import searchProducts from "/src/assets/search-products.jpg";
-import gamerelics from "/src/assets/gamerelics.jpg";
 import grambeeWeb from "/src/assets/grambee-web.jpg";
 import grambee from "/src/assets/grambee.jpg";
-import gamekool from "/src/assets/gamekool.jpg";
 
 import hca from "/src/assets/hca/hca.png";
 import hca1 from "/src/assets/hca/hca1.png";
@@ -70,6 +67,15 @@ import forexpo8 from "/src/assets/forexpo/forexpo8.png";
 import forexpo9 from "/src/assets/forexpo/forexpo9.png";
 
 import yandex from "/src/assets/yandex.jpg";
+
+import gamekool from "/src/assets/gamekool/gamekool.png";
+import gamekool1 from "/src/assets/gamekool/gamekool1.jpg";
+
+import klassikgames from "/src/assets/klassikgames/klassikgames.png";
+import klassikgames1 from "/src/assets/klassikgames/klassikgames1.jpg";
+
+import gamerelics from "/src/assets/gamerelics/gamerelics.png";
+import gamerelics1 from "/src/assets/gamerelics/gamerelics1.jpg";
 
 export const projects = [
   {
@@ -488,6 +494,7 @@ export const projects = [
       • Настроил сохранение корзины в localStorage и отображение количества товаров в иконке корзины
       • Добавил форму обратной связи с валидацией полей и отправкой данных`,
     link: "https://gamekool-de.netlify.app/",
+    images: [gamekool1]
   },
   {
     title: "GameRelics",
@@ -508,5 +515,6 @@ export const projects = [
       • Добавил форму оформления заказа с валидацией всех полей
       • Адаптировал все анимации для мобильных устройств — на тачскринах анимации заменены на более простые для производительности`,
     link: "https://gamerelics-uk.netlify.app/",
+    images: [gamerelics1]
   }
 ];
