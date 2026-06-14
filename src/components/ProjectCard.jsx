@@ -1,8 +1,8 @@
-// ProjectCard.js — Киберпанк / IT-стиль с метриками и ховерами
 import styled, { keyframes } from "styled-components";
 import { Card } from "../styles";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import ProjectDetailModal from "./ProjectDetailModal";
 
 const glitchOverlay = keyframes`
   0% { transform: translate(0); opacity: 0; }
@@ -78,7 +78,7 @@ const ImageContainer = styled.div`
 
 const Img = styled.img`
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
   border-radius: 14px;
   transition: all 0.4s ease;
@@ -191,20 +191,6 @@ const Link = styled.a`
   }
 `;
 
-const Metrics = styled.div`
-  display: flex;
-  gap: 12px;
-  font-family: 'Fira Code', monospace;
-  font-size: 10px;
-  color: #4a8a7a;
-`;
-
-const MetricItem = styled.span`
-  display: flex;
-  align-items: center;
-  gap: 4px;
-`;
-
 const ScanEffect = styled.div`
   position: absolute;
   top: 0;
@@ -224,57 +210,63 @@ const ScanEffect = styled.div`
 
 export default function ProjectCard({ project, index }) {
   const [isHovered, setIsHovered] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   
-  // Генерация "хеша" для каждого проекта
   const projectHash = project.title
     .split('')
     .reduce((acc, char) => acc + char.charCodeAt(0), 0)
     .toString(16)
     .toUpperCase()
     .slice(0, 6);
-  
+
   return (
-    <ProjectCardWrapper
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: (index || 0) * 0.05 }}
-      onHoverStart={() => setIsHovered(true)}
-      onHoverEnd={() => setIsHovered(false)}
-    >
-      <ImageContainer>
-        <Img src={project.image} alt={project.title} />
-        <GlitchOverlay />
-        <CornerBadge>
-          0x{projectHash}
-        </CornerBadge>
-      </ImageContainer>
+    <>
+      <ProjectCardWrapper
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: (index || 0) * 0.05 }}
+        onHoverStart={() => setIsHovered(true)}
+        onHoverEnd={() => setIsHovered(false)}
+      >
+        <ImageContainer>
+          <Img src={project.image} alt={project.title} onClick={() => setIsModalOpen(!isModalOpen)}/>
+          <GlitchOverlay />
+          <CornerBadge>
+            0x{projectHash}
+          </CornerBadge>
+        </ImageContainer>
+
+        <Name onClick={() => setIsModalOpen(!isModalOpen)}>
+          &lt;{project.title} /&gt;
+        </Name>
+
+        <Desc>{project.description}</Desc>
+
+        <StackWrapper>
+          {project.stack.split(",").map((tech) => (
+            <StackTag key={tech.trim()}>
+              {tech.trim()}
+            </StackTag>
+          ))}
+        </StackWrapper>
+
+        <LinkWrapper>
+          <Link href={project.link} target="_blank" rel="noopener noreferrer">
+            <span>{project.link && <span>⟫ DEPLOY ⟫</span>}</span>
+          </Link>
+        </LinkWrapper>
+
+        <ScanEffect />
+      </ProjectCardWrapper>
+      {isModalOpen && 
+      <ProjectDetailModal
+        project={project}
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
+      }
       
-      <Name>
-        &lt;{project.title} /&gt;
-      </Name>
-      
-      <Desc>{project.description}</Desc>
-      
-      <StackWrapper>
-        {project.stack.split(",").map((tech) => (
-          <StackTag key={tech.trim()}>
-            {tech.trim()}
-          </StackTag>
-        ))}
-      </StackWrapper>
-      
-      <LinkWrapper>
-        <Link href={project.link} target="_blank" rel="noopener noreferrer">
-          <span>{project.link && <span>⟫ DEPLOY ⟫</span>}</span>
-        </Link>
-        <Metrics>
-          <MetricItem>📁 {Math.floor(Math.random() * 50) + 10} files</MetricItem>
-          <MetricItem>⚡ {Math.floor(Math.random() * 30) + 5} kB</MetricItem>
-        </Metrics>
-      </LinkWrapper>
-      
-      <ScanEffect />
-    </ProjectCardWrapper>
+    </>
   );
 }

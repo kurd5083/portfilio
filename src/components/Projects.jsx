@@ -39,7 +39,6 @@ const StatsBar = styled.div`
   font-family: 'Fira Code', monospace;
   font-size: 13px;
   position: relative;
-  z-index: 2;
 
   @media (max-width: 768px) {
     flex-direction: column;
